@@ -14,6 +14,12 @@
 
   <body>
     <div id="app">加载中...</div>
+
+    <nav>
+      <a href="#/">中文</a>
+      <a href="#/en/">English</a>
+    </nav>
+
     <script>
       window.$docsify = {
         name: 'CAS协会官网',
@@ -23,9 +29,12 @@
         loadNavbar: true,
         mergeNavbar: true,
 
+        // 搜索配置
         search: 'auto',
-        search: [],
-        themeColor: '#3F51B5',
+        search: [
+          '/', // => /README.md
+          '/en/', // => /en/README.md
+        ],
         search: {
           maxAge: 86400000, // 过期时间，单位毫秒，默认一天
           paths: [], // or 'auto'
@@ -33,16 +42,12 @@
 
           // 支持本地化
           placeholder: {
-            '/zh-cn/': '搜索',
-            '/': 'Type to search',
+            '/': '搜索',
+            '/en/': 'Search',
           },
-
-          noData: 'No Results!',
-
-          // 支持本地化
           noData: {
-            '/zh-cn/': '找不到结果',
-            '/': 'No Results',
+            '/': '找不到结果',
+            '/en/': 'No Results',
           },
 
           // 搜索标题的最大层级, 1 - 6
@@ -59,13 +64,14 @@
           //
           // 初始化索引时，我们从侧边栏查找第一个路径
           // 如果它与列表中的前缀匹配，我们将切换到相应的索引
-          pathNamespaces: ['/zh-cn', '/ru-ru', '/ru-ru/v1'],
+          pathNamespaces: ['/en'],
 
           // 您可以提供一个正则表达式来匹配前缀。在这种情况下，
           // 匹配到的字符串将被用来识别索引
-          pathNamespaces: /^(\/(zh-cn|ru-ru))?(\/(v1|v2))?/,
+          pathNamespaces: [/\/(en|zh-CN)\//],
         },
 
+        // 分页导航
         pagination: {
           previousText: {
             '/en/': 'Previous',
@@ -76,7 +82,40 @@
             '/': '下一章',
           },
           crossChapter: true,
-          crossChapter: true,
+        },
+
+        // 字数统计
+        count: {
+          countable: true,
+          fontsize: '0.9em',
+          color: 'rgb(90, 90, 90)',
+          language: 'chinese',
+          isExpected: false,
+        },
+
+        // 代码复制
+        copyCode: {
+          buttonText: {
+            '/en/': 'Copy code',
+            '/': '复制代码',
+          },
+          errorText: {
+            '/en/': 'Error',
+            '/': '错误',
+          },
+          successText: {
+            '/en/': 'Copied',
+            '/': '复制成功',
+          },
+        },
+
+        // 标签页
+        tabs: {
+          persist: true,
+          sync: true,
+          theme: 'classic',
+          tabComments: true,
+          tabHeadings: true,
         },
       };
     </script>
@@ -87,5 +126,7 @@
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+    <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
   </body>
 </html>

@@ -1,6 +1,5 @@
-# CAS万岁!
+# CAS 万岁!
 
 :100:
 
-[ACM启动!](README.md)
-
+[ACM 启动!](preface.md)

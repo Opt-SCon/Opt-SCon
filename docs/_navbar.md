@@ -1,5 +1,3 @@
-
-* 友情链接
-  * [Docsify](https://docsify.js.org/#/)
-* [OJ](http://10.6.19.12/JudgeOnline/)
-
+- [简体中文](/)
+  - <font color = #65b787>[简体中文](/)</font>
+  - [English](/en/)
