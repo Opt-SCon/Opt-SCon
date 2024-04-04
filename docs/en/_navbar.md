@@ -1,3 +1,0 @@
-- [English](/)
-  - [简体中文](/)
-  - <font color = #65b787>[English](/en/)</font>

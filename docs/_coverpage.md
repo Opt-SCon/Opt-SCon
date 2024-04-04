@@ -2,4 +2,4 @@
 
 :100:
 
-[ACM 启动!](preface.md)
+[ACM 启动!](README.md)
