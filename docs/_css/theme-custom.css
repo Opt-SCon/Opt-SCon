@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Source+Sans+Pro:300,400,600');
+
+
+:root {
+    --content-max-width: 90%;
+}
+
+header {
+    width: 100%;
+}
+
+div.title {
+    margin-left: 10px;
+}
+
+.sidebar .app-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background-color: #012aff;
+    background-image: linear-gradient(90deg, #4B82C3 36%, #FFD51E 60%, #B12B1A 79%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    /* 使文字颜色透明，以显示背景的渐变色 */
+    -webkit-text-fill-color: transparent;
+    /* 对于Webkit浏览器，也需要设置文字填充颜色为透明 */
+}
+
+.sidebar .app-name a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.sidebar .app-name img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}

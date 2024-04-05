@@ -1,0 +1,3 @@
+- 校园
+  - [VPN](http://vpn.huhst.edu.cn:9900)
+- [HUHST OJ](http://10.6.19.12/JudgeOnline/)

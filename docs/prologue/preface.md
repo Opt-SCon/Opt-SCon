@@ -1,15 +1,21 @@
-<!-- tabs:start -->
+# 序
 
-#### **English**
+假如你还没有写完 150 题进入集训队，请先尝试写一写，详细请看 [如何加入](../about/join-us.md)。150 题是对语法基础的一个检验。
 
-Hello!
+假如你是刚刚进队的萌新，你会发现队内的个人赛对你来说很有难度。别急，大家大一也都是这么过来的。
 
-#### **French**
+我挑选了一点题目，在每页的最下面。全部见 [题目列表汇总](https://www.luogu.com.cn/training/70190)。请务必完成每节的习题，以加深掌握。
 
-Bonjour!
+## 算法
 
-#### **Italian**
+一般而言，算法是解决问题的计算方法，是罗列出的解决步骤。
 
-Ciao!
+算法不等同于程序，我们可以说程序是算法用某种程序设计语言的具体实现。算法更关注于做什么，表现为一种思想。
 
-<!-- tabs:end -->
+部分内容来自于 [OI-Wiki](https://oi-wiki.org/)，那里也有许多算法的介绍，感兴趣的可以看看。
+
+## 试机题
+
+- [P1001 A+B Problem](https://www.luogu.com.cn/problem/P1001)
+- [P1047 校门外的树](https://www.luogu.com.cn/problem/P1047)
+- [P2181 对角线](https://www.luogu.com.cn/problem/P2181)
